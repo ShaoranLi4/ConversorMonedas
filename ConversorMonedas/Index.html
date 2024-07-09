@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Monedas</h1>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="inputAmount" placeholder="0 MXN" disabled>
+                <input type="text" id="outputAmount" placeholder="0" disabled>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="num" data-value="1">1</button>
+                    <button class="num" data-value="2">2</button>
+                    <button class="num" data-value="3">3</button>
+                </div>
+                <div class="row">
+                    <button class="num" data-value="4">4</button>
+                    <button class="num" data-value="5">5</button>
+                    <button class="num" data-value="6">6</button>
+                </div>
+                <div class="row">
+                    <button class="num" data-value="7">7</button>
+                    <button class="num" data-value="8">8</button>
+                    <button class="num" data-value="9">9</button>
+                </div>
+                <div class="row">
+                    <button class="num" data-value="0">0</button>
+                    <button class="num" data-value=".">.</button>
+                    <button id="clear">C</button>
+                </div>
+                <!-- Monedas existentes -->
+                <div class="row">
+                    <button class="currency" data-currency="USD">USD</button>
+                    <button class="currency" data-currency="EUR">EUR</button>
+                    <button class="currency" data-currency="ARS">ARS</button>
+                </div>
+                <div class="row">
+                    <button class="currency" data-currency="COP">COP</button>
+                    <button class="currency" data-currency="GBP">GBP</button>
+                    <button class="currency" data-currency="JPY">JPY</button>
+                </div>
+                <div class="row">
+                    <button class="currency" data-currency="CNY">CNY</button>
+                    <button class="currency" data-currency="RUB">RUB</button>
+                </div>
+                <!-- Monedas nuevas (solo ejemplos, agregar todas según sea necesario) -->
+                <div class="row">
+                    <button class="currency" data-currency="AED">AED</button>
+                    <button class="currency" data-currency="AFN">AFN</button>
+                    <button class="currency" data-currency="ALL">ALL</button>
+                </div>
+                <div class="row">
+                    <button class="currency" data-currency="AMD">AMD</button>
+                    <button class="currency" data-currency="ANG">ANG</button>
+                    <button class="currency" data-currency="AOA">AOA</button>
+                </div>
+                <!-- Añadir más filas según sea necesario para incluir todas las monedas -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
